@@ -2,7 +2,7 @@
 
 ## 📌 Project Description
 
-**DailyTechAI** is an automated **AI-powered Telegram bot** that fetches the latest **software technology news**, filters relevant articles, and delivers them to users in a clean format.
+**DailyTechHarryAI** is an automated **AI-powered Telegram bot** that fetches the latest **software technology news**, filters relevant articles, and delivers them to users in a clean format.
 
 The bot collects news from developer-focused RSS feeds, removes duplicates, and allows users to request **AI-generated explanations** for any news item directly inside Telegram.
 
@@ -82,7 +82,7 @@ Click the link below to start using the Telegram bot:
 
 # ⚙️ Installation Guide
 
-Follow the steps below to run **DailyTechAI Telegram Bot** locally.
+Follow the steps below to run **DailyTechHarryAI Telegram Bot** locally.
 
 ---
 
@@ -90,7 +90,7 @@ Follow the steps below to run **DailyTechAI Telegram Bot** locally.
 
 ```bash
 git clone https://github.com/Hariharan-S5/DailyTechHarryAI.git
-cd DailyTechAI
+cd DailyTechHarryAI
 ```
 
 ---
@@ -256,7 +256,7 @@ The bot sends formatted messages:
 ```
 🚀 Daily Software Tech Updates
 
-1. 📰 Title
+1.📰 Title
 2.📄 Description
 3.🔗 Link
 
@@ -334,7 +334,7 @@ https://www.infoq.com/java/feed/
 # 🗂 Project Structure
 
 ```
-DailyTechAI
+DailyTechHarryAI
 │
 ├── app.py
 ├── Ai.py
@@ -501,7 +501,7 @@ Planned enhancements:
 
 # 🧾 Conclusion
 
-**DailyTechAI** demonstrates how AI, automation, and APIs can be combined to create an intelligent information system for developers.
+**DailyTechHarryAI** demonstrates how AI, automation, and APIs can be combined to create an intelligent information system for developers.
 
 The project highlights:
 
@@ -513,6 +513,7 @@ The project highlights:
 This system can evolve into a **full developer news assistant platform**.
 
 ---
+
 
 
 
