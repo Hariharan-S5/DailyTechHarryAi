@@ -257,8 +257,8 @@ The bot sends formatted messages:
 🚀 Daily Software Tech Updates
 
 1. 📰 Title
-📄 Description
-🔗 Link
+2.📄 Description
+3.🔗 Link
 
 💬 Reply with number for AI explanation
 ```
@@ -458,19 +458,6 @@ If yes → skip.
 
 ---
 
-# 🧩 Technologies Used
-
-| Technology    | Purpose            |
-| ------------- | ------------------ |
-| Python        | Core development   |
-| Transformers  | AI model inference |
-| Feedparser    | RSS parsing        |
-| BeautifulSoup | HTML cleaning      |
-| Schedule      | Task automation    |
-| Requests      | API communication  |
-
----
-
 # 🚀 Example Bot Output
 
 ```
@@ -526,5 +513,6 @@ The project highlights:
 This system can evolve into a **full developer news assistant platform**.
 
 ---
+
 
 
