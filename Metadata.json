@@ -1,0 +1,66 @@
+{
+   "production": true,
+  "telegram": {
+    "bot_token": "8730327091:AAGcUACjh3aKnDgB4k5N_h98TaWd2pw2IVU",
+    "chat_id": "7941582991"
+  },
+
+  "news_limit": {
+    "hackernews": 3,
+    "infoq_java": 2
+  },
+
+  "rss_sources": {
+    "hackernews": "https://hnrss.org/frontpage",
+    "infoq_java": "https://www.infoq.com/java/feed/"
+  },
+
+  "news_api": {
+    "api_key": "afcc27732c4540d889c07555bfde7cd3"
+  },
+
+  "bot_settings": {
+    "schedule_hours": 8,
+    "schedule_minutes": 30,
+    "schedule_seconds": 10,
+    "ai_max_length": 200,
+    "ai_filter_length": 10
+  },
+
+  "ai_model": {
+    "model_name": "google/flan-t5-base"
+  },
+
+  "files": {
+    "sent_news_file": "sent_news.json"
+  },
+
+  "keywords": [
+    "software",
+    "programming",
+    "developer",
+    "coding",
+    "java",
+    "spring",
+    "framework",
+    "library",
+    "api",
+    "sdk",
+    "ai",
+    "machine learning",
+    "llm",
+    "cloud",
+    "docker",
+    "kubernetes",
+    "microservices",
+    "devops",
+    "database",
+    "sql",
+    "nosql",
+    "github",
+    "open source",
+    "backend",
+    "frontend",
+    "automation"
+  ]
+}
