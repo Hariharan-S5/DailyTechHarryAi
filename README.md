@@ -22,15 +22,15 @@ It focuses on **software engineering topics** such as:
 
 The goal of this project is to build an **intelligent automation system** that:
 
-✔ Fetches technology news automatically
+       ✔ Fetches technology news automatically
 
-✔ Filters only **software-related news**
+       ✔ Filters only **software-related news**
 
-✔ Sends updates to Telegram on a schedule
+       ✔ Sends updates to Telegram on a schedule
 
-✔ Uses AI to explain complex news topics
+       ✔ Uses AI to explain complex news topics
 
-✔ Prevents duplicate news delivery
+       ✔ Prevents duplicate news delivery
 
 This project demonstrates practical skills in:
 
