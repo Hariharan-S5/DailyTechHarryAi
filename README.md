@@ -167,7 +167,7 @@ pip install requests transformers torch schedule feedparser beautifulsoup4
 Edit the configuration file:
 
 ```bash
-metadata.json
+.env
 ```
 
 Add your Telegram bot credentials:
