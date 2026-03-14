@@ -3,6 +3,7 @@ import requests
 import schedule
 import time
 import json
+from dotenv import load_dotenv
 import os
 
 from News import get_news
@@ -13,10 +14,13 @@ from Ai import explain, is_software_news
 with open("metadata.json") as f:
     config = json.load(f)
 
-PRODUCTION = config["production"]
-TOKEN = config["telegram"]["bot_token"]
-CHAT_ID = config["telegram"]["chat_id"]
+load_dotenv()
 
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+
+PRODUCTION = config["production"]
 SENT_FILE = config["files"]["sent_news_file"]
 
 
