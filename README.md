@@ -56,33 +56,33 @@ Click the link below to start using the Telegram bot:
 # 🏗 System Architecture
 
 ```
-                                                                   RSS Sources
-                                                               (HackerNews, InfoQ)
-                                                                        │
-                                                                        ▼
-                                                                   News.py
-                                                               (Fetch + Clean HTML)
-                                                                        │
-                                                                        ▼
-                                                                     Ai.py
-                                                            ┌────────────────────────┐
-                                                            │  Keyword Filtering     │
-                                                            │  AI Explanation Model  │
-                                                            └────────────────────────┘
-                                                                        │
-                                                                        ▼
-                                                                     main.py
-                                                             ┌──────────────────────┐
-                                                             │ Telegram Bot Logic   │
-                                                             │ Scheduler            │
-                                                             │ Duplicate Detection  │
-                                                             └──────────────────────┘
-                                                                        │
-                                                                        ▼
-                                                                    Telegram Bot
-                                                                        │
-                                                                        ▼
-                                                                    User Interaction
+                                                     RSS Sources
+                                                 (HackerNews, InfoQ)
+                                                          │
+                                                          ▼
+                                                     News.py
+                                                 (Fetch + Clean HTML)
+                                                          │
+                                                          ▼
+                                                       Ai.py
+                                              ┌────────────────────────┐
+                                              │  Keyword Filtering     │
+                                              │  AI Explanation Model  │
+                                              └────────────────────────┘
+                                                          │
+                                                          ▼
+                                                       main.py
+                                               ┌──────────────────────┐
+                                               │ Telegram Bot Logic   │
+                                               │ Scheduler            │
+                                               │ Duplicate Detection  │
+                                               └──────────────────────┘
+                                                          │
+                                                          ▼
+                                                      Telegram Bot
+                                                          │
+                                                          ▼
+                                                      User Interaction
 ```
 
 
