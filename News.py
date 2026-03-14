@@ -2,12 +2,14 @@
 import json
 import feedparser
 from bs4 import BeautifulSoup
-
+from dotenv import load_dotenv
+import os
 
 # load metadata
 with open("metadata.json") as f:
     meta = json.load(f)
 
+load_dotenv()
 
 HACKERNEWS_URL = meta["rss_sources"]["hackernews"]
 INFOQ_URL = meta["rss_sources"]["infoq_java"]
@@ -15,7 +17,9 @@ INFOQ_URL = meta["rss_sources"]["infoq_java"]
 HN_LIMIT = meta["news_limit"]["hackernews"]
 JAVA_LIMIT = meta["news_limit"]["infoq_java"]
 
-API_KEY = meta["news_api"]["api_key"]
+print(os.getenv("TELEGRAM_BOT_TOKEN"))
+print(os.getenv("TELEGRAM_NEWS_API_KEY"))
+API_KEY = os.getenv("TELEGRAM_NEWS_API_KEY")
 
 
 def clean_html(text):
