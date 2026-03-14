@@ -2,7 +2,7 @@
 
 ## 📌 Project Description
 
-**DailyTechHarryAI** is an automated **AI-powered Telegram bot** that fetches the latest **software technology news**, filters relevant articles, and delivers them to users in a clean format.
+**DailyTechAI** is an automated **AI-powered Telegram bot** that fetches the latest **software technology news**, filters relevant articles, and delivers them to users in a clean format.
 
 The bot collects news from developer-focused RSS feeds, removes duplicates, and allows users to request **AI-generated explanations** for any news item directly inside Telegram.
 
@@ -23,9 +23,13 @@ It focuses on **software engineering topics** such as:
 The goal of this project is to build an **intelligent automation system** that:
 
 ✔ Fetches technology news automatically
+
 ✔ Filters only **software-related news**
+
 ✔ Sends updates to Telegram on a schedule
+
 ✔ Uses AI to explain complex news topics
+
 ✔ Prevents duplicate news delivery
 
 This project demonstrates practical skills in:
@@ -36,6 +40,16 @@ This project demonstrates practical skills in:
 * Data processing
 * Bot development
 * Python backend design
+
+---
+
+
+
+## 🤖 Try the Bot
+
+Click the link below to start using the Telegram bot:
+
+[Open DailyTechHarryAI-Bot](https://web.telegram.org/k/#@DailyTechHarry_bot)
 
 ---
 
@@ -57,7 +71,7 @@ This project demonstrates practical skills in:
     └────────────────────────┘
                 │
                 ▼
-             app.py
+             main.py
      ┌──────────────────────┐
      │ Telegram Bot Logic   │
      │ Scheduler            │
@@ -71,18 +85,37 @@ This project demonstrates practical skills in:
             User Interaction
 ```
 
----
 
-## 🤖 Try the Bot
-
-Click the link below to start using the Telegram bot:
-
-[Open DailyTechHarryAI-Bot](https://web.telegram.org/k/#@DailyTechHarry_bot)
 
 
 # ⚙️ Installation Guide
 
-Follow the steps below to run **DailyTechHarryAI Telegram Bot** locally.
+Follow the steps below to run **DailyTechAI Telegram Bot** locally.
+
+---
+
+# 🌱 Environment Variables (.env)
+
+To securely store API keys and secrets, use a `.env` file in your project root. Example:
+
+```
+TELEGRAM_NEWS_API_KEY=your_api_key_here
+```
+
+Install the `python-dotenv` package to load environment variables automatically:
+
+```bash
+pip install python-dotenv
+```
+
+Add this code snippet at the top of your main Python files (e.g., `News.py`):
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+This will load variables from `.env` so you don’t need to set them manually each time.
 
 ---
 
@@ -90,7 +123,7 @@ Follow the steps below to run **DailyTechHarryAI Telegram Bot** locally.
 
 ```bash
 git clone https://github.com/Hariharan-S5/DailyTechHarryAI.git
-cd DailyTechHarryAI
+cd DailyTechAI
 ```
 
 ---
@@ -139,13 +172,10 @@ metadata.json
 
 Add your Telegram bot credentials:
 
-```json
-{
-  "telegram": {
-    "bot_token": "YOUR_BOT_TOKEN",
-    "chat_id": "YOUR_CHAT_ID"
-  }
-}
+```.env
+TELEGRAM_BOT_TOKEN=0000000:XAXAXAXAXAXAXAXAXAXAXAXAXAXA
+TELEGRAM_CHAT_ID=0000000000
+TELEGRAM_NEWS_API_KEY=XA0XA0XA0XA0XA0XA0XA0
 ```
 
 ---
@@ -155,7 +185,7 @@ Add your Telegram bot credentials:
 Start the bot using:
 
 ```bash
-python app.py
+python main.py
 ```
 
 The bot will now:
@@ -232,7 +262,7 @@ github
 
 ### Step 3 — Remove Duplicate News
 
-`app.py` stores sent news titles inside:
+`main.py` stores sent news titles inside:
 
 ```
 sent_news.json
@@ -256,9 +286,9 @@ The bot sends formatted messages:
 ```
 🚀 Daily Software Tech Updates
 
-1.📰 Title
-2.📄 Description
-3.🔗 Link
+1. 📰 Title
+2. 📄 Description
+3. 🔗 Link
 
 💬 Reply with number for AI explanation
 ```
@@ -334,21 +364,23 @@ https://www.infoq.com/java/feed/
 # 🗂 Project Structure
 
 ```
-DailyTechHarryAI
+DailyTechAI
 │
-├── app.py
+├── main.py
 ├── Ai.py
 ├── News.py
 ├── metadata.json
 ├── sent_news.json
+├── .env
 └── README.md
+
 ```
 
 ---
 
 # 📦 Module Explanation
 
-## 1️⃣ app.py
+## 1️⃣ main.py
 
 Main Telegram bot controller.
 
@@ -458,6 +490,19 @@ If yes → skip.
 
 ---
 
+# 🧩 Technologies Used
+
+| Technology    | Purpose            |
+| ------------- | ------------------ |
+| Python        | Core development   |
+| Transformers  | AI model inference |
+| Feedparser    | RSS parsing        |
+| BeautifulSoup | HTML cleaning      |
+| Schedule      | Task automation    |
+| Requests      | API communication  |
+
+---
+
 # 🚀 Example Bot Output
 
 ```
@@ -501,7 +546,7 @@ Planned enhancements:
 
 # 🧾 Conclusion
 
-**DailyTechHarryAI** demonstrates how AI, automation, and APIs can be combined to create an intelligent information system for developers.
+**DailyTechAI** demonstrates how AI, automation, and APIs can be combined to create an intelligent information system for developers.
 
 The project highlights:
 
@@ -513,7 +558,5 @@ The project highlights:
 This system can evolve into a **full developer news assistant platform**.
 
 ---
-
-
 
 
