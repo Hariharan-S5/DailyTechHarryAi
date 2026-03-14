@@ -419,30 +419,36 @@ Handles:
 Configuration file controlling:
 
 Prodection 
-    ---
+```
     true : live/production mode, 
     false : testing/development mode
-    ---
+```
+
 Schedule settings
-    ---
+```
     Set the timing for news delivery (e.g., interval, cron)
-    ---
+```
+
 RSS sources
-    ---
+```
     List of RSS feed URLs for news collection
-    ---
+```
+
 News limits
-    ---
+```
     Maximum number of news items to fetch/send per cycle
-    ---
+```
+
 AI model
-    ---
+```
     Model name or path used for AI explanations
-    ---
+```
+
 Keywords
-    ---
+```
     List of keywords for filtering relevant news
-    ---
+```
+
 
 This allows easy system customization without editing code.
 
