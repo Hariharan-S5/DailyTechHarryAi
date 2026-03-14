@@ -1,22 +1,12 @@
 {
-   "production": true,
-  "telegram": {
-    "bot_token": "8730327091:AAGcUACjh3aKnDgB4k5N_h98TaWd2pw2IVU",
-    "chat_id": "7941582991"
-  },
-
+  "production": true,
   "news_limit": {
     "hackernews": 3,
     "infoq_java": 2
   },
-
   "rss_sources": {
     "hackernews": "https://hnrss.org/frontpage",
     "infoq_java": "https://www.infoq.com/java/feed/"
-  },
-
-  "news_api": {
-    "api_key": "afcc27732c4540d889c07555bfde7cd3"
   },
 
   "bot_settings": {
